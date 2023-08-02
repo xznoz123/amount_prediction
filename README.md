@@ -31,10 +31,10 @@ A pie chart is used to display the distribution of categorical data or the propo
 ### 3. Histogram
 A histogram is employed to show the distribution of numerical data and the frequency of values within specified bins.
 
-![Histogram](Screenshot 2023-08-03 000236.png)
+![Histogram](histo.png)
 
 ## Code Implementation
-We provide snippets of code to demonstrate essential parts of the project, such as data preprocessing, feature engineering, model training, and evaluation.
+We provide snippets of code to demonstrate essential parts of the project, such as prediction, feature engineering, model training, and evaluation.
 
 ```python
 # create a new coluwm from existing coluwm
@@ -64,7 +64,7 @@ df['ORDER_AMOUNT'] = df['ORDER_AMOUNT'].astype(float)
 df['amount_in_usd'] = df['ORDER_AMOUNT'] * df['ORDER_CURRENCY'].map(exchange_rates)
 df
 ```
-![Hash Map](Screenshot 2023-08-03 003119.png)
+![Amount in usd](amountinusd.png)
 ```python
 # Perform Regression model evaluations like MSE, RMSE, R-Square etc.
 from sklearn.metrics import mean_squared_error, r2_score
